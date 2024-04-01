@@ -1,10 +1,13 @@
 {
-  "version": "14.0.2",
-  "name": "twemoji",
+  "version": "14.1.0",
+  "name": "@engenharia/twemoji",
   "license": [
     "MIT",
     "CC-BY-4.0"
   ],
+  "publishConfig": {
+    "access": "restricted"
+  },
   "description": "A Unicode standard based way to implement emoji across all platforms.",
   "homepage": "https://github.com/twitter/twemoji",
   "keywords": [
@@ -36,7 +39,7 @@
     "build": "./scripts/build.js",
     "deploy": "./scripts/deploy.sh gh-pages",
     "test": "phantomjs ./src/test/testrunner.js",
-    "prepublishOnly": "run-s build test deploy"
+    "prepublishOnly": "run-s build test"
   },
   "dependencies": {
     "fs-extra": "^8.0.1",
